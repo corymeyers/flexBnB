@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet"  href="style.css">
+  <title></title>
+</head>
+<body>
+<div class="wrapper">
+
+  <nav class="menu">
+    <a href="#" class="toggleNav">☰</a>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Download the App</a></li>
+      <li><a href="#">Sign Up</a></li>
+      <li><a href="#">Log In</a></li>
+      <li><a href="#">Discover</a></li>
+      <li><a href="#">Search</a></li>
+      <li><a href="#">How It Works</a></li>
+      <br>
+      <li><a href="#">Help</a></li>
+    </ul>
+  </nav>
+
+
+
+  <div class="videoDiv">
+    <img src="img/hero.jpg">
+  </div>
+
+  <div class="form">
+    <form class="searchForm">
+      <input type="search" placeholder="Where do you want to go?">
+      <input type="date" name="from">
+      <input type="date" name="Check Out">
+
+      <select name="guest" id="">
+        <option value="1">1 Guest</option>
+        <option value="2">2 Guest</option>
+        <option value="3">3 Guest</option>
+        <option value="4">4 Guest</option>
+        <option value="5">5 Guest</option>
+      </select>
+
+      <input type="submit" value="Submit">
+
+    </form>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+
+      $(function() {
+        $('.toggleNav').on('click',function() {
+          $('.menu ul').toggleClass('open');
+        });
+      });
+    </script>
+
+
+</div>
+</body>
+</html>
